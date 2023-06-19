@@ -5,7 +5,7 @@ const refs = {
 
 const { input, span } = refs;
 
-input.addEventListener('change', event =>
+input.addEventListener('input', event =>
   !event.currentTarget.value
     ? (span.textContent = 'Anonymous')
     : (span.textContent = event.currentTarget.value)
